@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     }
 });
 
-type Calendar = "auc" | "gonghe"
+type Calendar = "auc" | "gonghe" | "huangdi"
 
 function getYearOffset(calendar: Calendar): number {
     switch (calendar) {
@@ -29,6 +29,9 @@ function getYearOffset(calendar: Calendar): number {
         }
         case "gonghe": {
             return 841;
+        }
+        case "huangdi": {
+            return 2697;
         }
     }
 }
@@ -56,6 +59,7 @@ export default function App() {
                 >
                     <Picker.Item label="A.U.C." value="auc" />
                     <Picker.Item label="Gonghe" value="gonghe" />
+                    <Picker.Item label="Huang Di" value="huangdi" />
                 </Picker>
             </View>
 
