@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Picker, StyleSheet, Text, View } from "react-native";
-import { Calendar } from "expo/build/removed.web";
 
 const styles = StyleSheet.create({
     container: {
